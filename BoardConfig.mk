@@ -16,6 +16,10 @@ TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /vendor/bin/mm-qcamera-daemon=27
 
+# DEX
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+
 # Kernel
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CONFIG := j4corelte_defconfig
