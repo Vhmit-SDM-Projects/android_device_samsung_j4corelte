@@ -12,6 +12,10 @@ DEVICE_PATH := device/samsung/j4corelte
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
 
+# Camera
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /vendor/bin/mm-qcamera-daemon=27
+
 # Kernel
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CONFIG := j4corelte_defconfig
