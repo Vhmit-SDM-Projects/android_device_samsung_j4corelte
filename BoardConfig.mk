@@ -24,5 +24,9 @@ TARGET_KERNEL_CONFIG := j4corelte_defconfig
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1644167168
 BOARD_VENDORIMAGE_PARTITION_SIZE := 260046848
 
+# Shims
+TARGET_LD_SHIM_LIBS += \
+    /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so 
+
 # Inherit from the proprietary version
 -include vendor/samsung/j4corelte/BoardConfigVendor.mk
