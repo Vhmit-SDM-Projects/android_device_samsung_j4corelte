@@ -9,6 +9,9 @@ $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
 
 # Camera
 PRODUCT_PACKAGES += \
+    GCamGo
+
+PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.5-impl \
     android.hardware.camera.provider@2.5-service \
