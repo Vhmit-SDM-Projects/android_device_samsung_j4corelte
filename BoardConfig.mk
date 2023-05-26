@@ -36,5 +36,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 260046848
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so 
 
+# Timeservice
+BOARD_USES_QC_TIME_SERVICES := true
+
 # Inherit from the proprietary version
 -include vendor/samsung/j4corelte/BoardConfigVendor.mk
