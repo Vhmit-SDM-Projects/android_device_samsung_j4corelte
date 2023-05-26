@@ -45,5 +45,8 @@ TARGET_LD_SHIM_LIBS += \
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2020-12-01
+
 # Inherit from the proprietary version
 -include vendor/samsung/j4corelte/BoardConfigVendor.mk
