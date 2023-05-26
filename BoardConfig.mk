@@ -35,6 +35,9 @@ TARGET_HAS_LOW_RAM := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1644167168
 BOARD_VENDORIMAGE_PARTITION_SIZE := 260046848
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so 
