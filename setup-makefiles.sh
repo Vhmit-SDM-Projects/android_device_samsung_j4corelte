@@ -9,9 +9,7 @@ set -e
 
 # Required!
 export DEVICE=j4corelte
-export BOARD_COMMON=msm8917-common
+export DEVICE_COMMON=msm8917-common
 export VENDOR=samsung
-
-export DEVICE_BRINGUP_YEAR=2019
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
